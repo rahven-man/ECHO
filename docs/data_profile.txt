@@ -1,0 +1,72 @@
+﻿
+=== business: 150,346 rows ===
+field                  present      null  types              max_len  min / max
+business_id            150,346         0  str                     22  
+name                   150,346         0  str                     64  
+address                150,346         0  str                    110  
+city                   150,346         0  str                     52  
+state                  150,346         0  str                      3  
+postal_code            150,346         0  str                      7  
+latitude               150,346         0  float                    0  27.555127 / 53.6791969
+longitude              150,346         0  float                    0  -120.095137 / -73.2004570502
+stars                  150,346         0  float                    0  1.0 / 5.0
+review_count           150,346         0  int                      0  5 / 7568
+is_open                150,346         0  int                      0  0 / 1
+attributes             150,346    13,744  dict                     0  
+categories             150,346       103  str                    503  
+hours                  150,346    23,223  dict                     0  
+
+
+=== review: 6,990,280 rows ===
+field                  present      null  types              max_len  min / max
+review_id            6,990,280         0  str                     22  
+user_id              6,990,280         0  str                     22  
+business_id          6,990,280         0  str                     22  
+stars                6,990,280         0  float                    0  1.0 / 5.0
+useful               6,990,280         0  int                      0  -1 / 1182
+funny                6,990,280         0  int                      0  -1 / 792
+cool                 6,990,280         0  int                      0  -1 / 404
+text                 6,990,280         0  str                   5000  
+date                 6,990,280         0  str                     19  
+
+
+=== user: 1,987,897 rows ===
+field                  present      null  types              max_len  min / max
+user_id              1,987,897         0  str                     22  
+name                 1,987,897         0  str                     32  
+review_count         1,987,897         0  int                      0  0 / 17473
+yelping_since        1,987,897         0  str                     19  
+useful               1,987,897         0  int                      0  0 / 206296
+funny                1,987,897         0  int                      0  0 / 185823
+cool                 1,987,897         0  int                      0  0 / 199878
+elite                1,987,897         0  str                     80  
+friends              1,987,897         0  str                 359878  
+fans                 1,987,897         0  int                      0  0 / 12497
+average_stars        1,987,897         0  float                    0  1.0 / 5.0
+compliment_hot       1,987,897         0  int                      0  0 / 25784
+compliment_more      1,987,897         0  int                      0  0 / 13501
+compliment_profile   1,987,897         0  int                      0  0 / 14180
+compliment_cute      1,987,897         0  int                      0  0 / 13654
+compliment_list      1,987,897         0  int                      0  0 / 12669
+compliment_note      1,987,897         0  int                      0  0 / 59031
+compliment_plain     1,987,897         0  int                      0  0 / 101097
+compliment_cool      1,987,897         0  int                      0  0 / 49967
+compliment_funny     1,987,897         0  int                      0  0 / 49967
+compliment_writer    1,987,897         0  int                      0  0 / 15934
+compliment_photos    1,987,897         0  int                      0  0 / 82630
+
+
+=== checkin: 131,930 rows ===
+field                  present      null  types              max_len  min / max
+business_id            131,930         0  str                     22  
+date                   131,930         0  str                1095022  
+
+
+=== tip: 908,915 rows ===
+field                  present      null  types              max_len  min / max
+user_id                908,915         0  str                     22  
+business_id            908,915         0  str                     22  
+text                   908,915         0  str                    500  
+date                   908,915         0  str                     19  
+compliment_count       908,915         0  int                      0  0 / 6
+
