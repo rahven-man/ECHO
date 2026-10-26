@@ -6,3 +6,5 @@ __pycache__/
 *.zip
 
 .venv/
+
+logs/
