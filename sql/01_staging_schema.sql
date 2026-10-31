@@ -21,3 +21,18 @@ CREATE TABLE business (
 ) ENGINE=InnoDB
   DEFAULT CHARSET=utf8mb4
   COLLATE=utf8mb4_0900_ai_ci;
+
+
+DROP TABLE IF EXISTS tip;
+
+create table tip (
+    tip_id        BIGINT UNSIGNED     NOT NULL AUTO_INCREMENT,
+    business_id   CHAR(22)      NOT NULL,
+    user_id       CHAR(22)      NOT NULL,
+    text          VARCHAR(1000) NULL,
+    date          DATETIME      NULL,
+    compliment_count INT        NULL,
+    PRIMARY KEY (tip_id)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
